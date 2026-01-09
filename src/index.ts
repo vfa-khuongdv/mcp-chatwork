@@ -18,7 +18,7 @@ async function main() {
   const client = new ChatworkClient();
   const server = new McpServer({
     name: "mcp-chatwork",
-    version: "1.0.0",
+    version: "1.0.1",
   });
 
   server.tool(
