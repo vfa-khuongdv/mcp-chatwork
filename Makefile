@@ -15,6 +15,9 @@ start:
 test:
 	npm test
 
+test-coverage:
+	npm run test:coverage
+
 clean:
 	rm -rf dist node_modules
 
@@ -29,6 +32,7 @@ help:
 	@echo "  make build      - Build the project"
 	@echo "  make start      - Run the project"
 	@echo "  make test       - Run tests"
+	@echo "  make test-coverage - Run tests with coverage"
 	@echo "  make clean      - Remove build artifacts and node_modules"
 	@echo "  make reinstall  - Clean and reinstall dependencies"
 	@echo "  make publish    - Build and publish to npm"

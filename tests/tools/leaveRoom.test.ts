@@ -1,9 +1,14 @@
+import { jest } from '@jest/globals';
+
+// Set environment variables BEFORE importing
+process.env.CHATWORK_API_TOKEN = "test-token-leave";
+
+// Mock ChatworkClient BEFORE importing
+jest.mock("../../src/api/client");
 
 import { leaveRoomTool } from "../../src/tools/leaveRoom";
 import { ChatworkClient } from "../../src/api/client";
 
-// Mock ChatworkClient
-jest.mock("../../src/api/client");
 const MockChatworkClient = ChatworkClient as jest.MockedClass<typeof ChatworkClient>;
 
 describe("leaveRoomTool", () => {

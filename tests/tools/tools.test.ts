@@ -1,3 +1,10 @@
+import { jest } from '@jest/globals';
+
+// Set environment variables BEFORE importing
+process.env.CHATWORK_API_TOKEN = "test-token-tools";
+
+// Mock ChatworkClient BEFORE importing
+jest.mock("../../src/api/client");
 
 import { ChatworkClient } from "../../src/api/client";
 import { completeTaskTool } from "../../src/tools/completeTask";
@@ -9,8 +16,6 @@ import { listMessagesTool } from "../../src/tools/listMessages";
 import { listRoomsTool } from "../../src/tools/listRooms";
 import { sendMessageTool } from "../../src/tools/sendMessage";
 
-// Mock ChatworkClient
-jest.mock("../../src/api/client");
 const MockChatworkClient = ChatworkClient as jest.MockedClass<typeof ChatworkClient>;
 
 describe("Chatwork Tools", () => {

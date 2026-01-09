@@ -1,6 +1,6 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
-  "name": "io.github.vfa-khuongdv/chatwork",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.vfa-khuongdv/mcp-chatwork",
   "description": "MCP server for Chatwork API integration with AI agents.",
   "repository": {
     "url": "https://github.com/vfa-khuongdv/mcp-chatwork",

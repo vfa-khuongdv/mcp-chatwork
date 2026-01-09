@@ -1,5 +1,7 @@
 export const config = {
-  chatworkApiToken: process.env.CHATWORK_API_TOKEN,
+  get chatworkApiToken() {
+    return process.env.CHATWORK_API_TOKEN;
+  },
 };
 
 export function validateConfig() {
