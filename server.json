@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "name": "io.github.vfa-khuongdv/chatwork",
+  "description": "MCP server for Chatwork API integration with AI agents.",
+  "repository": {
+    "url": "https://github.com/vfa-khuongdv/mcp-chatwork",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@duongkhuong/mcp-chatwork",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CHATWORK_API_KEY",
+          "description": "Your Chatwork API key from account settings",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}
