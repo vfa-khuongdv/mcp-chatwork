@@ -28,9 +28,9 @@
     "type": "git",
     "url": "https://github.com/vfa-khuongdv/mcp-chatwork.git"
   },
-  "homepage": "https://github.com/vfa-khuongdv/mcp_chatwork#readme",
+  "homepage": "https://github.com/vfa-khuongdv/mcp-chatwork#readme",
   "bugs": {
-    "url": "https://github.com/vfa-khuongdv/mcp_chatwork/issues"
+    "url": "https://github.com/vfa-khuongdv/mcp-chatwork/issues"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.25.2",
