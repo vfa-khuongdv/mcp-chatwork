@@ -1,5 +1,5 @@
 {
-  "name": "mcp-chatwork",
+  "name": "@duongkhuong/mcp-chatwork",
   "version": "1.0.0",
   "main": "index.js",
   "description": "Chatwork MCP Server",

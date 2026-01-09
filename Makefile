@@ -1,4 +1,4 @@
-.PHONY: install build start test clean help
+.PHONY: install build start test clean help publish
 
 # Default target
 all: install build
@@ -20,6 +20,9 @@ clean:
 
 reinstall: clean install
 
+publish: build
+	npm publish --access public
+
 help:
 	@echo "Available targets:"
 	@echo "  make install    - Install dependencies"
@@ -28,4 +31,5 @@ help:
 	@echo "  make test       - Run tests"
 	@echo "  make clean      - Remove build artifacts and node_modules"
 	@echo "  make reinstall  - Clean and reinstall dependencies"
+	@echo "  make publish    - Build and publish to npm"
 	@echo "  make all        - Install and build (default)"
